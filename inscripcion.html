@@ -28,22 +28,35 @@
 
   <body>
     <!--Menu-->
-    <nav class="navbar p-0">
-      <div class="container-fluid bg-black">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="img/logotipo para marca .png"
-            alt="FitForge"
-            style="height: 70px; width: auto"
-            class="d-inline-block align-text-top"
-          />
-        </a>
-        <h1 class="text-white mb-0">Darse de Alta</h1>
+    <nav class="navbar bg-black p-0">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center text-center">
+          <!-- Columna izquierda: logo -->
+          <div class="col-4 text-start">
+            <a class="navbar-brand m-0" href="index.html">
+              <img
+                src="img/logotipo para marca .png"
+                alt="FitForge"
+                class="d-inline-block align-text-top"
+                style="height: 70px; width: auto"
+              />
+            </a>
+          </div>
+
+          <!-- Columna central: título -->
+          <div class="col-4">
+            <h1 class="text-white mt-2">Darse de Alta</h1>
+          </div>
+
+          <!--Espacio a la derecha-->
+          <div class="col-4"></div>
+        </div>
       </div>
     </nav>
+
     <!--Ofertas-->
-    <div class="container pt-4">
-      <h2><i class="bi bi-award"></i>Nuestras Ofertas</h2>
+    <div class="container pt-3">
+      <h4 class="mb-3"><i class="bi bi-award"></i>NUESTRAS OFERTAS</h4>
       <div class="row justify-content-center">
         <!-- Primera tarjeta -->
         <div class="col-md-12 col-lg-6 mb-md-4">
@@ -53,8 +66,8 @@
             </div>
             <div class="text-center">
               <h2 class="pt-3">Primer mes 8,95€/mes</h2>
-              <h2 class="fs-5">*Después 30,95€/mes*</h2>
-              <i class="bi bi-person-fill"></i>
+              <h3>*Después 30,95€/mes*</h3>
+              <i class="bi bi-person-fill fs-1"></i>
             </div>
             <div class="card-body">
               <div class="accordion" id="accordionOne">
@@ -213,8 +226,8 @@
             </div>
             <div class="text-center">
               <h2 class="pt-3">Primer mes 19,95€/mes</h2>
-              <h2 class="fs-5">*Después 69,55€/mes*</h2>
-              <i class="bi bi-person-lines-fill"></i>
+              <h3>*Después 69,55€/mes*</h3>
+              <i class="bi bi-person-lines-fill fs-1"></i>
             </div>
 
             <div class="card-body">
@@ -379,6 +392,189 @@
         </div>
       </div>
     </div>
+    <!-- Formulario -->
+    <div class="container py-3">
+      <!-- DATOS PERSONALES -->
+      <h4 class="mb-3">DATOS PERSONALES</h4>
+
+      <form>
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="genero"
+              id="hombre"
+              value="hombre"
+              required
+            />
+            <label class="form-check-label" for="hombre">Hombre</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="genero"
+              id="mujer"
+              value="mujer"
+              required
+            />
+            <label class="form-check-label" for="mujer">Mujer</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="genero"
+              id="otro"
+              value="otro"
+              required
+            />
+            <label class="form-check-label" for="otro">Otro</label>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellidos</label>
+            <input
+              type="text"
+              class="form-control"
+              id="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="fecha" class="form-label">Cumpleaños</label>
+            <input
+              type="date"
+              class="form-control"
+              id="fecha"
+              placeholder="dd/mm/aaaa"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="telefono" class="form-label">Número de teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefono"
+              placeholder="Número de teléfono"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="mi-email@example.com"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email2" class="form-label">Confirme su email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email2"
+              placeholder="mi-email@example.com"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- DATOS DEL DOMICILIO -->
+        <h4 class="mt-4 mb-3">DATOS DEL DOMICILIO</h4>
+
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="cp" class="form-label">Código postal</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cp"
+              placeholder="41089"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="numero" class="form-label">Número</label>
+            <input
+              type="text"
+              class="form-control"
+              id="numero"
+              placeholder="12"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="info" class="form-label"
+              >Información adicional</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="info"
+              placeholder="4a"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="calle" class="form-label">Calle</label>
+            <input
+              type="text"
+              class="form-control"
+              id="calle"
+              placeholder="tu calle"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ciudad"
+              placeholder="tu ciudad"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- COMUNICACIÓN -->
+        <h4 class="mt-4 mb-3">INFORMACIÓN Y PROMOCIONES</h4>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="promo" />
+          <label class="form-check-label" for="promo">
+            Sí, me gustaría recibir promociones de los socios de FitForge.
+          </label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="autorizacion" />
+          <label class="form-check-label" for="autorizacion">
+            Sí. Autorizo a FitForge para que utilice mis datos y se ponga en
+            contacto conmigo para ofrecerme asistencia basada específicamente.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-success px-4">Enviar</button>
+      </form>
+    </div>
+
     <!-- Redes Sociales -->
     <footer>
       <div class="container-fluid bg-black p-5 d-none d-sm-block text-white">
@@ -419,15 +615,15 @@
         <div class="row">
           <div class="col d-flex justify-content-between align-items-center">
             <div>
-              <button class="btn btn-dark bg-transparent border-0">
-                > Aviso legal
-              </button>
-              <button class="btn btn-dark bg-transparent border-0">
-                > Cookies
-              </button>
-              <button class="btn btn-dark bg-transparent border-0">
-                > Condiciones
-              </button>
+              <a href="#" class="text-decoration-none me-3 text-white"
+                >>Aviso legal</a
+              >
+              <a href="#" class="text-decoration-none me-3 text-white"
+                >>Cookies</a
+              >
+              <a href="#" class="text-decoration-none me-3 text-white"
+                >>Términos y condiciones</a
+              >
             </div>
             <p class="mb-0">©FitForge</p>
           </div>
