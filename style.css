@@ -1,0 +1,73 @@
+/* Tipografía personalizada */
+
+
+/* Tipografía para títulos */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Tipografía para textos */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Imágenes del carrusel a pantalla completa */
+
+.carousel-item img {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/* fondo tenue al pasar/seleccionar */
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+
+/*Para tener guardado cada color de nuestra paleta con nombres*/
+
+:root {
+    /* Primary color */
+    --azul-claro: #e1f5fe;
+    --azul-principal: #80defd;
+    --azul-medio: #33ccff;
+    --azul-profundo: #03a9f4;
+    --azul-intenso: #016ae9;
+    --azul-oscuro: #004ba3;
+    /* Secondary color #1 - gama violeta */
+    --violeta-claro: #f1efff;
+    --violeta-principal: #a391fe;
+    --violeta-medio: #5d30ff;
+    --violeta-profundo: #2200e8;
+    --violeta-oscuro: #1806b4;
+    /* Secondary color #2 - gama verde aqua */
+    --verde-claro: #ebfff8;
+    --verde-principal: #82fed2;
+    --verde-medio: #21ffb1;
+    --verde-profundo: #00ea97;
+    --verde-oscuro: #008053;
+}
+
+
+/*Efecto hover en cards: al pasar el cursor se aplica un borde azul para resaltar interactivdad.*/
+
+.card:hover {
+    border: 5px solid var(--violeta-medio);
+    transition: border 0.1s ease;
+}
