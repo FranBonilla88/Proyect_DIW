@@ -24,9 +24,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!--Estilos css-->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <main>
     <!--Menu-->
     <nav class="navbar bg-black p-0">
       <div class="container-fluid">
@@ -60,8 +64,8 @@
       <div class="row justify-content-center">
         <!-- Primera tarjeta -->
         <div class="col-md-12 col-lg-6 mb-md-4">
-          <div class="card">
-            <div class="card-header bg-secondary text-white text-center fs-2">
+          <div class="card rounded-top-0">
+            <div class="card-header bg-secondary text-white text-center fs-2 rounded-0">
               Cuota Completa
             </div>
             <div class="text-center">
@@ -220,8 +224,8 @@
 
         <!-- Segunda tarjeta -->
         <div class="col-md-12 col-lg-6">
-          <div class="card">
-            <div class="card-header bg-secondary text-white text-center fs-2">
+          <div class="card rounded-top-0">
+            <div class="card-header bg-secondary text-white text-center fs-2 rounded-0">
               Cuota Familiar
             </div>
             <div class="text-center">
@@ -396,7 +400,6 @@
     <div class="container py-3">
       <!-- DATOS PERSONALES -->
       <h4 class="mb-3">DATOS PERSONALES</h4>
-
       <form>
         <div class="mb-3">
           <div class="form-check form-check-inline">
@@ -574,61 +577,40 @@
         <button type="submit" class="btn btn-success px-4">Enviar</button>
       </form>
     </div>
-
+    </main>
     <!-- Redes Sociales -->
-    <footer>
-      <div class="container-fluid bg-black p-5 d-none d-sm-block text-white">
-        <h2 class="pb-3 ms-4">FitForge</h2>
-        <div class="row text-center">
-          <div class="col-sm-6 col-md-4 col-lg-2 py-2">
-            <button class="btn btn-primary">
-              <i class="bi bi-twitter-x fs-4"></i> Twitter
-            </button>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 py-2">
-            <button class="btn btn-primary">
-              <i class="bi bi-linkedin fs-4"></i> Linkedin
-            </button>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 py-2">
-            <button class="btn btn-primary">
-              <i class="bi bi-instagram fs-4"></i> Instagram
-            </button>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 py-2">
-            <button class="btn btn-primary">
-              <i class="bi bi-youtube fs-4"></i> YouTube
-            </button>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 py-2">
-            <button class="btn btn-primary">
-              <i class="bi bi-tiktok fs-4"></i> Tik Tok
-            </button>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-2 py-2">
-            <button class="btn btn-primary">
-              <i class="bi bi-messenger fs-4"></i> Messenger
-            </button>
-          </div>
-          <hr class="border border-light opacity-75 my-3" />
-        </div>
-        <div class="row">
-          <div class="col d-flex justify-content-between align-items-center">
-            <div>
-              <a href="#" class="text-decoration-none me-3 text-white"
-                >>Aviso legal</a
-              >
-              <a href="#" class="text-decoration-none me-3 text-white"
-                >>Cookies</a
-              >
-              <a href="#" class="text-decoration-none me-3 text-white"
-                >>Términos y condiciones</a
-              >
+    <footer class="bg-black text-white w-100">
+        <div class="container-fluid px-0">
+            <div class="p-4">
+                <h2 class="ms-3">FitForge</h2>
+
+                <div class="d-flex justify-content-center justify-content-lg-end gap-3">
+                    <a href="#" class="text-decoration-none">
+                        <i class="bi bi-linkedin fs-4" style="color: var(--azul-principal);"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="bi bi-instagram fs-4" style="color: var(--azul-principal);"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="bi bi-youtube fs-4" style="color: var(--azul-principal);"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="bi bi-messenger fs-4" style="color: var(--azul-principal);"></i>
+                    </a>
+                </div>
+
+                <hr class="border border-light opacity-75 my-3" />
+
+                <div class="d-flex justify-content-between align-items-center px-3">
+                    <div>
+                        <button class="btn btn-dark bg-transparent border-0">> Aviso legal</button>
+                        <button class="btn btn-dark bg-transparent border-0">> Cookies</button>
+                        <button class="btn btn-dark bg-transparent border-0">> Condiciones</button>
+                    </div>
+                    <p class="mb-0">©FitForge</p>
+                </div>
             </div>
-            <p class="mb-0">©FitForge</p>
-          </div>
         </div>
-      </div>
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
