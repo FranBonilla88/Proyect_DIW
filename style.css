@@ -68,6 +68,6 @@ body {
 /*Efecto hover en cards: al pasar el cursor se aplica un borde azul para resaltar interactivdad.*/
 
 .card:hover {
-    border: 5px solid var(--violeta-medio);
-    transition: border 0.1s ease;
+    outline: 5px solid var(--violeta-medio);
+    transition: outline 0.1s ease;
 }
