@@ -1,0 +1,14 @@
+<!-- navbar: activa el componente de navegación de Bootstrap -->
+<!-- navbar-expand-md: el menú se expande desde pantallas medianas (≥768px) -->
+<!-- position-absolute: posiciona el navbar fuera del flujo normal del documento -->
+<!-- top-0: lo ancla en la parte superior del contenedor -->
+<!-- start-0: lo alinea al borde izquierdo -->
+<!-- w-100: hace que el navbar ocupe el 100% del ancho disponible -->
+<!-- z-3: aplica z-index 3 para darle prioridad visual sobre otros elementos -->
+<!-- navbar-brand: define el bloque de identidad del sitio dentro del navbar. Agrupa el logotipo y el nombre, y lo posiciona correctamente según el diseño Bootstrap. -->
+<!-- navbar-nav: agrupa los elementos de navegación dentro del navbar -->
+<!-- dropdown: convierte el ítem en un contenedor de menú desplegable -->
+<!-- dropdown-menu: define el contenedor del menú desplegable -->
+<!-- dropdown-menu-end: alinea el menú hacia el borde derecho del contenedor padre -->
+<!-- aria-labelledby="btnHorario": vincula el menú con el botón que lo activa, mejorando accesibilidad -->
+<!-- h-100: fuerza que el contenedor de texto ocupe el 100% de la altura de la imagen del carrusel. Esto permite que el contenido se centre verticalmente usando flexbox (justify-content-center). Sin esta clase, el texto quedaría alineado arriba o flotando sin control visual. -->

@@ -21,22 +21,17 @@
 
 <body style="background-color: var(--azul-principal);">
     <main>
+        <!-- Contenedor de ancho completo para el navbar, sin padding -->
         <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-md position-absolute top-0 start-0 w-100 z-3" style="background-color: var(--azul-medio); opacity: 0.80;">
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-md position-absolute w-100 z-3" style="background-color: var(--azul-medio); opacity: 0.80;">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white fw-bold d-flex align-items-center ms-3 gap-2" href="index.html">
-                        <img src="img/logotipo_para_marca_.jpg" alt="FitForge" class="d-inline-block align-text-top" style="height: 70px; width: auto" />
-                        <span class="fs-4">
+                    <a class="navbar-brand text-white d-flex align-items-center ms-3" href="index.html">
+                        <img src="img/logotipo_para_marca_.jpg" alt="FitForge" style="height: 70px; width: auto" />
                         <h1>FitForge</h1>
-                    </span>
                     </a>
-
-                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav align-items-center ms-auto">
+                    <div class="align-content-end ">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="actividades.html">Actividades</a>
                             </li>
@@ -44,9 +39,8 @@
                                 <a class="nav-link text-white" href="inscripcion.html">Inscripción</a>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <button class="btn btn-danger dropdown-toggle" id="btnHorario" type="button" data-bs-toggle="dropdown" aria-expanded="false">Horario</button>
-
+                            <li class="nav-item dropdown me-2">
+                                <button class="btn btn-danger dropdown-toggle w-100" type="button" id="btnHorario" data-bs-toggle="dropdown" aria-expanded="false">Horario</button>
                                 <ul class="dropdown-menu dropdown-menu-end bg-dark bg-opacity-75 border-0" aria-labelledby="btnHorario">
                                     <li><a class="dropdown-item text-white" href="#">Mañana (7:00-12:00)</a></li>
                                     <li><a class="dropdown-item text-white" href="#">Tarde (12:00-18:00)</a></li>
@@ -60,7 +54,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <button class="btn text-white dropdown-toggle" id="btnUbicacion" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ubicaciones</button>
+                                <button class="btn btn-primary text-white dropdown-toggle w-100" id="btnUbicacion" type="button" data-bs-toggle="dropdown">Ubicaciones</button>
 
                                 <ul class="dropdown-menu dropdown-menu-end bg-dark bg-opacity-75 border-0" aria-labelledby="btnUbicacion">
                                     <li><a class="dropdown-item text-white" href="#">Huelva</a></li>
@@ -76,12 +70,12 @@
             </nav>
 
             <!-- Carrusel sin bordes -->
-            <div class="w-100 m-0 p-0">
+            <div class="w-100">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <!-- Imagen 1 -->
                         <div class="carousel-item active">
-                            <img src="img/hombre_levantando_pesa.jpg" class="d-block" alt="" />
+                            <img src="img/hombre_levantando_pesa.jpg" class="d-block" alt="Hombre levantando pesa" />
                             <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
                                 <h5 class="fs-1" style="color: var(--azul-claro)">Sala de musculación</h5>
                                 <p class="fs-3">Espacio diseñado para el desarrollo completo de fuerza y resistencia muscular, equipado con racks, barras y discos de alto rendimiento.</p>
@@ -90,7 +84,7 @@
 
                         <!-- Imagen 2 -->
                         <div class="carousel-item">
-                            <img src="img/mancuernas.jpg" class="d-block" alt="" />
+                            <img src="img/mancuernas.jpg" class="d-block" alt="Mancuernas" />
                             <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
                                 <h5 class="fs-1" style="color: var(--azul-claro)">Potencia y control</h5>
                                 <p class="fs-3">Mejora tu condición física con ejercicios de fuerza adaptados a distintos niveles y objetivos.</p>
