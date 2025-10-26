@@ -12,3 +12,6 @@
 <!-- dropdown-menu-end: alinea el menú hacia el borde derecho del contenedor padre -->
 <!-- aria-labelledby="btnHorario": vincula el menú con el botón que lo activa, mejorando accesibilidad -->
 <!-- h-100: fuerza que el contenedor de texto ocupe el 100% de la altura de la imagen del carrusel. Esto permite que el contenido se centre verticalmente usando flexbox (justify-content-center). Sin esta clase, el texto quedaría alineado arriba o flotando sin control visual. -->
+<!-- col-md-4: cada card ocupa 4 de las 12 columnas desde pantallas md (≥768px), permitiendo mostrar 3 cards por fila.
+     mb-3: añade margen inferior en móviles para evitar que las cards se peguen verticalmente.
+     mb-md-4: aumenta el margen inferior en pantallas md o mayores para mejorar la separación visual entre filas. -->
